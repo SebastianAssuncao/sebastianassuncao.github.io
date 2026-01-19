@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sebastian Assunção - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: #000;
+            background: #fff;
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        header {
+            margin-bottom: 60px;
+            border-bottom: 2px solid #c41e3a;
+            padding-bottom: 20px;
+        }
+        
+        h1, h2, h3 {
+            font-family: Georgia, serif;
+        }
+        
+        h1 {
+            font-size: 32px;
+            font-weight: 500;
+            margin-bottom: 10px;
+            color: #c41e3a;
+        }
+        
+        .tagline {
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 1.5;
+        }
+        
+        nav {
+            margin: 30px 0;
+            position: sticky;
+            top: 0;
+            background: #fff;
+            padding: 15px 0;
+            z-index: 100;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        nav a {
+            color: #000;
+            text-decoration: none;
+            margin-right: 20px;
+            font-weight: 400;
+            font-size: 14px;
+            transition: color 0.2s ease;
+        }
+        
+        nav a:hover {
+            color: #c41e3a;
+            text-decoration: underline;
+        }
+        
+        section {
+            margin-bottom: 80px;
+        }
+        
+        h2 {
+            font-size: 24px;
+            font-weight: 500;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #000;
+            padding-bottom: 8px;
+            color: #c41e3a;
+        }
+        
+        h3 {
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 8px;
+            margin-top: 25px;
+        }
+        
+        .meta {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        
+        p, li {
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+        
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        a {
+            color: #c41e3a;
+            text-decoration: underline;
+            transition: color 0.2s ease;
+        }
+        
+        a:hover {
+            color: #8b1528;
+            text-decoration: none;
+        }
+        
+        /* Grid layout for visuals */
+        .visual-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .visual-item {
+            margin-bottom: 0;
+        }
+        
+        .visual-item img {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            object-position: center;
+            border: 1px solid #000;
+            margin-bottom: 10px;
+            transition: opacity 0.2s ease, border-color 0.2s ease;
+            background: #f5f5f5;
+        }
+        
+        .visual-item img:hover {
+            opacity: 0.85;
+            border-color: #c41e3a;
+        }
+        
+        .visual-placeholder {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            border: 2px dashed #ccc;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fafafa;
+            color: #999;
+            font-size: 14px;
+            transition: border-color 0.2s ease;
+        }
+        
+        .visual-placeholder:hover {
+            border-color: #c41e3a;
+        }
+        
+        .caption {
+            font-size: 13px;
+            font-style: italic;
+            color: #333;
+            line-height: 1.5;
+        }
+        
+        footer {
+            margin-top: 100px;
+            padding-top: 20px;
+            border-top: 1px solid #000;
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .contact-links a {
+            display: inline-block;
+            margin-right: 15px;
+            margin-top: 5px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .visual-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            nav a {
+                display: inline-block;
+                margin-bottom: 10px;
+            }
+            
+            body {
+                padding: 20px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sebastian Assunção</h1>
+        <p class="tagline">Mechatronics Engineering Student at the University of Waterloo. Passionate about robotics, manufacturing systems, and solving complex engineering challenges.</p>
+    </header>
+    
+    <nav>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#visuals">Visuals</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <section id="about">
+        <h2>About</h2>
+        <p>
+            Engineer with strong focus on mechanical design, robotics, and how they impact real-world issues. I'm driven by challenging projects that combine innovative design with practical engineering solutions, from soft robotics research to tunnel boring machines.
+        </p>
+    </section>
+    
+    <section id="experience">
+        <h2>Experience</h2>
+        
+        <h3>Soft Robotics R&D Engineering Intern</h3>
+        <p class="meta">University of Waterloo | Sept 2025 - Dec 2025</p>
+        <ul>
+            <li>Responsible for the ideation, design, and construction of a pneumatically actuated, soft robotic hand along with a repeatable manufacturing procedure, the purpose of which is to create a product for lymphedema patients.</li>
+            <li>The hand contains 16 actuators, 19 PDM Chips, and 32 solenoid valves in order to meet the standard of mobility. Air pressure, surface pressure, and angle sensors are at each joint to allow for a fully closed control system. All listed hardware fits within the mechanical design of the palm.</li>
+            <li>Utilized SolidWorks, AutoCAD, Altium, laser cutting, both SLS and FDM 3D Printing as well as various developed manufacturing techniques to design a feasibly 3D printable mechanical structure, as well as manufacturing rigs for Laser Cut thermal polyurethane bellow-shaped pneumatic actuators.</li>
+            <li>Collaborated alongside Masters and PhD students with various other soft-robotics related tasks pertaining to their research papers. Said tasks include testing rigs for soft strain gauges and soft surface pressure sensors, as well several electrical board housings.</li>
+        </ul>
+
+        <h3>Co-Founder and Erosion Team Lead</h3>
+        <p class="meta">WatDig | Sept 2023 - May 2025</p>
+        <ul>
+            <li>Constructed a small-scale tunnel boring machine for the 2025 Not-A-Boring Competition.</li>
+            <li>Led the mechanical design and R&D efforts to create an Excavation Subsystem composed of a powertrain capable of producing 2100 Nm of torque and a closed loop slurry soil treatment system.</li>
+            <li>Designed and implemented the excavation chamber onboard the TBM which is responsible for the mixture and removal of slurry during excavation and is critical for maintaining earth pressure balance during excavation.</li>
+            <li>Led integration efforts between the erosion team and other subsystems, coordinating for timely manufacturing.</li>
+        </ul>
+        
+        <h3>Manufacturing Engineering Intern</h3>
+        <p class="meta">Global Furniture Group | Jan 2025 - April 2025</p>
+        <ul>
+            <li>Designed manufacturing fixtures and jigs in SolidWorks using UBG plastic and sheet metal so that technicians responsible for all stitching done on the assembly line can operate their equipment efficiently.</li>
+            <li>Developed a rotating fixture assembly to allow for upholsterers to assemble and staple products that interface with injection molded parts by utilizing aluminum extrusions, pneumatic cylinders, and UBG Plastic.</li>
+            <li>Conducted a time study on an assembly line using lean manufacturing principles to suggest optimizations.</li>
+        </ul>
+        
+        <h3>Automatic Train Control Engineering Assistant</h3>
+        <p class="meta">Toronto Transit Commission | May 2024 - Aug 2024</p>
+        <ul>
+            <li>Utilized Microstation to produce, alter, and organize crucial mechanical and electrical drawings for the update of the entire relay-based signalling system of the Toronto subway lines.</li>
+            <li>Led the implementation of the mechanical and electrical design of new signalling infrastructure for Line 1 of the TTC by repurposing old hardware. Conducted on-site field inspections of hardware design changes.</li>
+        </ul>
+        
+        <h3>Junior Systems Integration Coordinator</h3>
+        <p class="meta">WGD Consulting | Sept 2023 - Dec 2023</p>
+        <ul>
+            <li>Utilized Python Scripting to automate calculations involving Traction Power data pulled from the existing SCADA system for a 30,000 KWh light rail project.</li>
+            <li>Conducted RAMS Engineering analysis to analyze tunnel ventilation systems coordinating engineering efforts with various contractors. Constructed a Visio Flowchart with logic gates to ensure understanding of all Electromagnetic Compliance standards.</li>
+        </ul>
+        
+        <h3>Project Managment Intern</h3>
+        <p class="meta">Alstom | Jan 2023 - May 2023</p>
+        <ul>
+            <li>Supported technical problem solving related to the vehicles using mechanical and electrical engineering concepts.</li>
+            <li>Proposed equipment modification regarding train axle mounting based on existing Failure Mode Analysis.</li>
+            <li>Identified and analyzed potential problems, prepared Project Timelines and Engineering Documentation ensuring projects were completed in a timely manner.</li>
+            <li>Collaborated with a cross-functional maintenance team to achieve all desired metrics.</li>
+        </ul>   
+    </section>
+    
+       <section id="visuals">
+        <h2>Visuals</h2>
+        <div class="visual-grid">
+            <div class="visual-item">
+                <img src="images/Hand1.jpg" alt="Soft robotic hand internal view" loading="lazy">
+                <p class="caption">Soft robotic hand internal view.<br>Here you can see all the solenoid valves as well as the solenoid driver board and the palm PCB board.</p>
+            </div>
+            
+            <div class="visual-item">
+                <img src="images/Hand2.jpg" alt="Soft robotic hand with tactile sensors" loading="lazy">
+                <p class="caption">Soft robotic hand with tactile sensors.<br>Here you can see an unfinished arrangement of the tactile sensors on the fingertips and palm.</p>
+            </div>
+            
+            <div class="visual-item">
+                <img src="images/TBM1.jpg" alt="Tunnel boring machine" loading="lazy">
+                <p class="caption">Top view of tunnel boring machine.<br>This image shows the TBM in a ready to dig position on its rails with our thrust plate and control board set up and ready to begin.</p>
+            </div>
+            
+            <div class="visual-item">
+                <img src="images/TBM2.jpg" alt="Tunnel boring machine" loading="lazy">
+                <p class="caption">Side and unhoused view of tunnel boring machine.<br>This image shows the side profile and some internal features of the TBM.</p>
+            </div>
+            <div class="visual-item">
+                <img src="images/MiniComp.jpg" alt="NaBC Mini competition Rover" loading="lazy">
+                <p class="caption">NaBC Mini competition Rover.<br>Autonomous rover designed for the NaBC Mini-Competition the year prior to the full competition.</p>
+            </div>
+            <div class="visual-item">
+                <img src="images/RelaySignals.jpg" alt="Relay signals" loading="lazy">
+                <p class="caption">TTC mechanical relay signalling system.<br>Picture of the one section of mechanical relay signalling that I made electrical and mechanical design changes for while at the TTC.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="education">
+        <h2>Education</h2>
+        
+        <h3>Bachelor of Applied Science, Mechatronics Engineering</h3>
+        <p class="meta">University of Waterloo | Sept 2022 - April 2027 | GPA: 3.9</p>
+        <p><strong>Relevant Courses:</strong> Design & Dynamics of Machines, Thermodynamics & Heat Transfer, Power Electronics, System Models, Mechanics of Deformable Solids, Fluid Dynamics, Electromechanical Machine Design</p>
+    </section>
+    
+    <section id="skills">
+        <h2>Skills</h2>
+        <p><strong>Design:</strong> SolidWorks, Catia, AutoCAD, Altium, Microstation, Onshape, GD&T, Machining, 3D Printing, DFM, DFA, FEA</p>
+        <p><strong>Programming:</strong> Python, Java, MATLAB, RobotC, C++, C, Excel VBA, HTML, SQL, VHDL, Git, Linux, Simulink</p>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-links">
+            <a href="mailto:sebastianassuncao77@gmail.com">Email</a>
+            <a href="https://www.linkedin.com/in/sebastian-assuncao" target="_blank">LinkedIn</a>
+            <a href="tel:647-323-8565">Phone: 647-323-8565</a>
+        </div>
+    </section>
+    
+    <footer>
+        <p>© 2026 Sebastian Assunção. Built with HTML.</p>
+    </footer>
+</body>
+</html>
